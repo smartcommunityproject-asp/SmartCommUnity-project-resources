@@ -18,8 +18,7 @@ function assessment_enqueue_assets() {
     wp_enqueue_script('map', plugins_url('js/map.js', __FILE__), array('jquery'), null, true);
      wp_enqueue_script('progress-script', plugins_url('js/progress.js', __FILE__), array('jquery'), null, true);
         
-    // $google_maps_api_key = 'AIzaSyAVMIFLd2SLtIYrrLQ8mr-FaidDIjYD0d0'; // Replace with your actual API key..old UM
-      $google_maps_api_key = 'AIzaSyCSke7P24DnMfGV4egaGwIKriyLRP4U_kI'; //new urban UL -- tudi v good practices map
+      $google_maps_api_key = '';
     wp_enqueue_script('google-maps', "https://maps.googleapis.com/maps/api/js?key=$google_maps_api_key&libraries=places&callback=initMap", null, null, true);
 
 }
@@ -701,4 +700,5 @@ function render_assessment_form() {
        </div>
     <?php
     return ob_get_clean();
+
 }
