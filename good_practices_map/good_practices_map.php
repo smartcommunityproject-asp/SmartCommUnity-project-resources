@@ -38,7 +38,7 @@ function enqueue_good_practices_map_scripts() {
     wp_enqueue_script('good-practices-map', plugins_url('good-practices-map.js', __FILE__), ['jquery'], null, true);
 
     // Add Google Maps API with async and defer attributes
-    $google_maps_api_key = 'AIzaSyCSke7P24DnMfGV4egaGwIKriyLRP4U_kI';
+    $google_maps_api_key = '';
 
 
     wp_enqueue_script(
@@ -144,3 +144,4 @@ function add_good_practices_map_js() {
     </script>
     <?php
 }
+
