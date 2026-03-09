@@ -1,0 +1,109 @@
+/* Styling for Data Community Viewer */
+.data-community-viewer { /* Renamed class */
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.data-community-viewer h3 { /* Renamed class */
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.data-community-viewer h4 { /* Renamed class */
+    margin-top: 10px;
+    margin-bottom: 8px;
+    color: #555;
+}
+.dc-criteria {
+  display: flex;
+}
+.dc-criteria ul { /* Renamed class prefix */
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+.dc-criteria li { /* Renamed class prefix */
+    margin-bottom: 10px; /* Increased space */
+}
+
+.dc-criteria .dc-unit { /* Renamed class prefix */
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.dc-criteria .dc-comment { /* Renamed class prefix */
+    display: flex;
+    margin-top: 3px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.dc-criteria .social {
+  border: 1px solid #FFEB3B;
+  padding: 15px;
+  background-color: #FFFDE7;
+  border-radius: 4px;
+  flex-grow: 1;
+  width: 32%;
+  margin-right:1%;
+}
+
+.dc-criteria .economic {
+    border: 1px solid #6082B6;
+  padding: 15px;
+  background-color: #E3F2FD;
+  border-radius: 4px;
+  flex-grow: 1;
+  width: 32%;
+  margin-right:1%;
+}
+
+.dc-criteria .environmental {
+  border: 1px solid #4CAF50;
+  padding: 15px;
+  background-color: #E8F5E9;
+  border-radius: 4px;
+  flex-grow: 1;
+  width: 32%;
+}
+
+.dc-chart-container {border-radius: 4px;border: 1px solid #ddd;}
+
+.dc-json-data pre { /* Renamed class prefix */
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 10px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 0.9em;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.dc-json-data code { /* Renamed class prefix */
+    font-family: Consolas, Monaco, monospace;
+}
+
+.dc-error { /* Renamed class prefix */
+    color: #D8000C;
+    background-color: #FFD2D2;
+    border: 1px solid #D8000C;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+/* Style for admin menu icon (set via register_post_type 'menu_icon' argument is preferred) */
+/*
+#adminmenu .menu-icon-dc_item div.wp-menu-image:before {
+    content: "\f504"; // Dashicons-groups icon code
+}
+*/

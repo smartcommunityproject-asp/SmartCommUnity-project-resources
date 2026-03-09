@@ -1,0 +1,196 @@
+/* Target dropdowns within #assessment-form-container */
+#assessment-form-container select {
+    color: #000; /* Ensure text is visible */
+    background-color: #fff; /* Background color for dropdowns */
+    border: 1px solid #ccc; /* Optional: Define a border */
+    padding: 5px; /* Optional: Add padding for better spacing */
+    appearance: none; /* Optional: Reset default browser styles */
+    -webkit-appearance: none; /* For WebKit browsers */
+    -moz-appearance: none; /* For Mozilla browsers */
+    max-width: 250px;
+}
+
+#assessment-form-container #pac-card input[type=text] {
+    color: #000; /* Ensure text is visible */
+    background-color: #fff; /* Background color for dropdowns */
+    border: 1px solid #ccc; /* Optional: Define a border */
+    padding: 5px; /* Optional: Add padding for better spacing */
+    appearance: none; /* Optional: Reset default browser styles */
+    -webkit-appearance: none; /* For WebKit browsers */
+    -moz-appearance: none; /* For Mozilla browsers */
+    max-width: 400px;
+    min-width:300px;
+    border-radius: 4px;
+    height: calc(1.5em + .75rem + 2px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom:8px;
+}
+
+/* Fix for invalid dropdown fields within the container */
+#assessment-form-container select.invalid {
+    border: 1px solid red; /* Highlight invalid fields in red */
+}
+
+/* Styling for dropdowns within the container when focused */
+#assessment-form-container select:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #85cc70; /* Highlight on focus */
+    box-shadow: 0 0 5px rgba(133, 204, 112, 0.5); /* Add shadow */
+}
+
+/* Fix input slider container issue */
+#assessment-form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Fix for slider width */
+#assessment-form-container .range {
+    width: 50%; /* Restrict slider width to 50% */
+    margin: 10px auto; /* Center slider horizontally */
+    margin-left:20px;
+}
+
+/* Adjust slider labels to align perfectly with the slider edges */
+#assessment-form-container .slider-labels {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%; /* Match slider width */
+    margin: 0 auto; /* Center labels horizontally */
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    top: -15px; /* Align with slider's edges */
+    pointer-events: none; /* Prevent interaction with the labels */
+}
+
+/* Fix for slider width */
+#assessment-form-container .range {
+    width: 50%; /* Restrict slider width to 50% */
+    margin: 10px auto; /* Center slider horizontally */
+    position: relative;
+}
+
+/* Align the selected input number after the colon */
+#assessment-form-container .tab-label output {
+    margin-left: 5px; /* Add spacing after colon */
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+    display: inline; /* Ensure it stays inline with the text */
+    text-align: left; /* Align text to the left */
+}
+
+/* Change tab hover color to green */
+#assessment-form-container .tab:hover {
+    background-color: #f5f5f5; /* Light green for hover effect */
+}
+
+/* Align the selected input number directly after the colon */
+#assessment-form-container .tab-label {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+#assessment-form-container .tab-label output {
+    margin-left: 5px; /* Add spacing after colon */
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+    display: inline; /* Ensure it stays inline with the text */
+    text-align: left; /* Left-align the text */
+    min-width: 30px; /* Reserve space to prevent layout shifting */
+}
+
+/* Arrow placement for tab-label */
+#assessment-form-container .tab-label::after {
+    content: '\25BC'; /* Down arrow */
+    font-size: 14px;
+    position: absolute;
+    right: 10px; /* Align to the right */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when tab is open */
+#assessment-form-container .tab.open .tab-label::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* Accordion content styling */
+#assessment-form-container .tab-content {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    border-radius: 0 0 5px 5px;
+    margin-top: 10px;
+}
+
+#assessment-form-container .tab.open .tab-content {
+    display: block;
+}
+
+/* Add green color to progress bar */
+.progress-bar {
+    background-color: #85cc70;
+}
+
+.pb-4 {
+    padding-bottom: 2rem;
+}
+
+.p1{
+    padding:0.5rem;
+}
+
+fieldset{
+    border:none !important;
+}
+
+
+
+/* Style for all buttons in the assessment form */
+#assessment-form-container input[type="button"],
+#assessment-form-container input[type="submit"] {
+    background-color: #85cc70; /* Green color */
+    color: #fff; /* White text */
+    border: none; /* Remove borders */
+    padding: 12px 20px; /* Add more padding */
+    font-size: 16px; /* Slightly larger font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for buttons */
+#assessment-form-container input[type="button"]:hover,
+#assessment-form-container input[type="submit"]:hover {
+    background-color: #6fb75a; /* Slightly darker green on hover */
+}
+
+/* Disabled state for buttons (optional) */
+#assessment-form-container input[type="button"]:disabled,
+#assessment-form-container input[type="submit"]:disabled {
+    background-color: #c3e3b3; /* Light green for disabled state */
+    cursor: not-allowed; /* Show "not allowed" cursor */
+}
+
+
+#assessment-form-container .invalid {
+    border: 2px solid red; /* Highlight invalid fields with red border */
+}
+
+#assessment-form-container .form-group.invalid label {
+    color: red; /* Highlight labels for invalid fields */
+}
+
+
+

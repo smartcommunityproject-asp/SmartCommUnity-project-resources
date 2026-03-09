@@ -1,0 +1,57 @@
+/**
+ * Data Community Admin Styles
+ */
+
+/* Utility class to hide fields */
+.dc-hidden-field {
+    display: none !important; /* Use important to override potential WP core styles */
+}
+
+/* Add some spacing for clarity */
+.dc-meta-section {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+.dc-meta-section:last-of-type {
+    border-bottom: none;
+}
+
+.dc-meta-field-group {
+    margin-bottom: 15px;
+    padding-left: 10px; /* Indent fields slightly */
+}
+
+.dc-criterion-group .radio-options {
+    margin-bottom: 10px;
+}
+
+.dc-criterion-group .value-source-inputs {
+    margin-top: 10px;
+    border-left: 3px solid #eee;
+    padding-left: 15px;
+    margin-left: 5px; /* Align with radio indent */
+}
+.dc-criterion-group .value-source-inputs .input-wrapper {
+    margin-bottom: 10px;
+}
+.dc-criterion-group .value-source-inputs label {
+     font-weight: normal; /* Less emphasis for sub-labels */
+     margin-bottom: 2px;
+}
+
+.dc-url-input-group {
+    display: flex;
+    align-items: center;
+}
+.dc-url-input-group input[type="url"] {
+    flex-grow: 1;
+    margin-right: 5px;
+}
+.dc-upload-button {
+    /* flex-shrink: 0; */ /* Prevent button from shrinking */
+}
+
+.dc-criterion-group .comment-input {
+    margin-top: 10px; /* Space before comment */
+}
